@@ -16,6 +16,6 @@ public class Passenger <T>{
         return identityNumber;
     }
     public String getIdentityType(){
-        return identityNumber.getClass().getSimpleName();
+        return "Integer";
     }
 }
