@@ -11,7 +11,7 @@ public class Main {
         String name = scanner.nextLine();
 
         System.out.print("Enter Identity Number   : ");
-        Long identity = Long.parseLong(scanner.nextLine());
+        Integer identity = Integer.parseInt(scanner.nextLine());
 
         System.out.print("Enter Booking Code      : ");
         String bookingCode = scanner.nextLine();
@@ -29,8 +29,12 @@ public class Main {
         else if (choice == 2) ticketClass = TicketClass.BUSINESS;
         else ticketClass = TicketClass.EXECUTIVE;
 
-        Passenger<Long> passenger = new Passenger<>(name,identity);
+        /*Passenger<String> p = new Passenger<>("andi", "BUDI");*/
+
+        Passenger<Integer> passenger = new Passenger<>(name,identity);
         Ticket <Long> ticket = new Ticket<>(bookingCode, passenger, ticketClass);
+
+
 
         TicketService.printTicket(ticket);
 

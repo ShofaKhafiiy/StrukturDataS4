@@ -15,7 +15,10 @@ public class Passenger <T>{
     public T getIdentityNumber(){
         return identityNumber;
     }
-    public String getIdentityType(){
+   /* public String getIdentityType(){
         return "Integer";
+    }*/
+    public String getIdentityType(){
+        return identityNumber.getClass().getSimpleName();
     }
 }
