@@ -32,7 +32,7 @@ public class Main {
         /*Passenger<String> p = new Passenger<>("andi", "BUDI");*/
 
         Passenger<Integer> passenger = new Passenger<>(name,identity);
-        Ticket <Long> ticket = new Ticket<>(bookingCode, passenger, ticketClass);
+        Ticket <Integer> ticket = new Ticket<>(bookingCode, passenger, ticketClass);
 
 
 
