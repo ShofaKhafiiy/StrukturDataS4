@@ -12,7 +12,6 @@ public class MajapahitBST {
 
     private Node insertRecursive(Node current, String name) {
 
-        // Jika node kosong
         if (current == null) {
             return new Node(name);
         }
@@ -207,7 +206,7 @@ public class MajapahitBST {
         System.out.println("        Raden Wijaya (Root)");
         System.out.println("              /       \\");
         System.out.println("     Jayanegara      Tribhuwana");
-        System.out.println("       /      ");
+        System.out.println("       /     \\ ");
         System.out.println("Gajah Mada  Kertanegara");
         System.out.println("      \\");
         System.out.println("      Hayam Wuruk");
